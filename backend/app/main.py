@@ -1,8 +1,8 @@
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .config import db
-from .service.auth_service import generate_role
+from app.config import db
+from app.service.auth_service import generate_role
 
 origins = [
     "http://127.0.0.1:5173"
@@ -35,7 +35,7 @@ def init_app():
         await db.close()
     
     
-    from .controller import authentification, users
+    from app.controller import authentification, users
     app.include_router(authentification.router)
     app.include_router(users.router)
     
