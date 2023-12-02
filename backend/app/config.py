@@ -7,6 +7,7 @@ password = "Samie1204$%"
 DB_CONFIG = f"postgresql+asyncpg://{user}:{password}$@localhost:5432/Login"
 
 
+SECRET_KEY = "Samie1204"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
