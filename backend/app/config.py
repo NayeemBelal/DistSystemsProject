@@ -7,6 +7,7 @@ password = "Samie1204$%"
 DB_CONFIG = f"postgresql+asyncpg://{user}:{password}$@localhost:5432/Login"
 
 
+
 SECRET_KEY = "Samie1204"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
@@ -20,6 +21,7 @@ class AsyncDatabaseSession:
         return getattr(self.session, name)
     
     def init(self):
+        print(DB_CONFIG)
         self.engine = create_async_engine(DB_CONFIG, future=True, echo=True)
         self.session = sessionmaker(self.engine, expire_on_commit=False, class_=AsyncSession)()
         
