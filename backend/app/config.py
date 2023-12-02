@@ -1,10 +1,13 @@
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
 from sqlmodel import SQLModel
+from urllib.parse import quote
 
 user = "postgres"
 password = "Samie1204$%"
-DB_CONFIG = f"postgresql+asyncpg://{user}:{password}@localhost:5432/Login"
+
+encoded_password = quote(password, safe="")
+DB_CONFIG = f"postgresql+asyncpg://{user}:{encoded_password}@localhost:5432/Login"
 
 
 
