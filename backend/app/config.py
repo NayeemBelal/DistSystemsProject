@@ -4,10 +4,10 @@ from sqlmodel import SQLModel
 from urllib.parse import quote
 
 user = "postgres"
-password = "Samie1204$%"
+password = "postgres"
 
 encoded_password = quote(password, safe="")
-DB_CONFIG = f"postgresql+asyncpg://{user}:{encoded_password}@localhost:5432/Login"
+DB_CONFIG = f"postgresql+asyncpg://{user}:postgres@localhost:5432/Login"
 
 
 
