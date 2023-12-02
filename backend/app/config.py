@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlmodel import SQLModel
 
 user = "postgres"
-password = "Samie1204$%25"
+password = "Samie1204$%"
 DB_CONFIG = f"postgresql+asyncpg://{user}:{password}@localhost:5432/Login"
 
 
