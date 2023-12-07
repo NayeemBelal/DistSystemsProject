@@ -7,7 +7,7 @@ user = "postgres"
 password = "Samie1204$%"
 
 encoded_password = quote(password, safe="")
-DB_CONFIG = f"postgresql+asyncpg://{user}:{encoded_password}@localhost:5432/Login"
+DB_CONFIG = f"postgresql+asyncpg://{user}:{encoded_password}@login-database.con9kzlms9uu.us-east-2.rds.amazonaws.com:5432/login"
 
 
 
