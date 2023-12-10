@@ -24,7 +24,7 @@ function Forgot(props) {
     event.preventDefault();
     console.log(forgotForm);
     await axios
-      .post("http://localhost:8888/auth/forgot-password", forgotForm)
+      .post("http://18.220.228.7:8000/auth/forgot-password", forgotForm)
       .then((response) => {
         console.log(response);
 

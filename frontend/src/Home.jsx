@@ -12,7 +12,7 @@ function Home() {
     const token = auth_token_type + " " + auth_token;
 
     axios
-      .get("http://localhost:8888/users/", {
+      .get("http://18.220.228.7:8000/users/", {
         headers: { Authorization: token },
       })
       .then((response) => {

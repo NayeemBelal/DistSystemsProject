@@ -70,7 +70,7 @@ function Register(props) {
     console.log(formRegister);
     // Post to register API
     await axios
-      .post("http://localhost:8888/auth/register", formRegister)
+      .post("http://18.220.228.7:8000/auth/register", formRegister)
       .then((response) => {
         navigate("/?signin");
 
