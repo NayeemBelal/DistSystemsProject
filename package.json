@@ -2,6 +2,6 @@
     "name": "login",
     "version": "1.0.0",
     "scripts": {
-      "build": "cd frontend && npm run build && cd ../backend && poetry install && poetry run start"
+      "build": "cd frontend && npm run build"
     }
   }
