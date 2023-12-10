@@ -24,7 +24,7 @@ function Login(props) {
     event.preventDefault();
     console.log(loginForm);
     await axios
-      .post("http://localhost:8888/auth/login", loginForm)
+      .post("http://18.220.228.7:8000/auth/login", loginForm)
       .then((response) => {
         console.log(response);
 
